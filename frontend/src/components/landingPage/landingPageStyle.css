@@ -1,0 +1,34 @@
+.slogan{
+    background: url('../../../Abdo3.jpg') no-repeat ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 500px;
+    color:#152F2E;
+    
+    height: 600px;
+}
+.headerElements{
+    padding-top: 100px;
+}
+.headerElements > *{
+    padding-top: 60px;
+    padding-left: 90px ;
+    width: 40%;
+}
+
+.headings{
+    margin-left: 90px;
+    width: 40%;
+    color:#152F2E;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+}
+.signCnt{
+    min-width: 22%;
+    
+}

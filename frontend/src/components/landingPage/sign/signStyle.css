@@ -1,0 +1,76 @@
+.sign{
+    /* width: 400px;
+    height: 500px; */
+    background-color: #152F2E;
+    margin-top: -100px;
+    min-height: 100%;
+    color: wheat;
+}
+.sign h1, .sign h6{
+    text-align: center;
+}
+
+/* .submitBtnCnt > *{
+    color: white;
+} */
+.form-container{
+    width: 80%;
+    display:flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.submitBtnCnt {
+    text-align: center;
+}
+
+.sign input {
+    width: 100%;
+    display: block;
+    margin: 15px auto;
+    height: 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 2px solid #EEF2E6;
+    outline: none;
+}
+
+.sign input:focus {
+    border: 2px solid wheat;
+}
+
+.sign button {
+    min-height: 40px;
+    min-width: 50%;
+    margin: 20px;
+    color: wheat;
+    border: none;
+    border-radius: 10px;
+    background-color: #00C2C5;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.errorMsg {
+    margin: 0;
+    color: red;
+    
+}
+
+.changeFormContainer{
+    text-align: center;
+}
+
+.changeForm{
+    display: inline-block;
+    text-align: center;
+}
+.changeForm p{
+    display: inline-block;
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: center;
+}

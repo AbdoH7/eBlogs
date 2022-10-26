@@ -4,7 +4,8 @@
   "info": {
     "singularName": "slogan",
     "pluralName": "slogans",
-    "displayName": "slogan"
+    "displayName": "slogan",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,9 @@
   "attributes": {
     "slogan": {
       "type": "string"
+    },
+    "content": {
+      "type": "text"
     }
   }
 }
