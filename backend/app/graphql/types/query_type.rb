@@ -13,5 +13,43 @@ module Types
     def test_field
       "Hello World!"
     end
+    #field :user, resolver: Queries::FetchUser
+    #field :fetch_users, resolver: Queries::FetchUsers
+
+    field :users, [UserType], null: false, description: 'List all users'
+    def users
+      User.all
+    end
+
+    field :user, Types::UserType, null:false do
+      argument :id, ID, required: false
+    end
+    def user(id:)
+      User.find(id)
+    end
+
+    field :posts, [PostType], null: false, description: 'List all posts'
+    def posts
+      Post.all
+    end
+
+    field :post, Types::PostType, null:false do
+      argument :id, ID, required: false
+    end
+    def post(id:)
+      Post.find(id)
+    end
+    
+    field :comments, [CommentType], null: false, description: 'List all comments'
+    def comments
+      Comment.all
+    end
+
+    field :comment, Types::CommentType, null:false do
+      argument :id, ID, required: false
+    end
+    def comment(id:)
+      Comment.find(id)
+    end
   end
 end
