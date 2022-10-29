@@ -5,7 +5,7 @@ module Types
         argument :firstname, String, required: true
         argument :lastname, String, required: true
         argument :email, String, required: true
-        argument :password_digest, String, required: true
+        argument :password, String, required: true
       end
     end
   end

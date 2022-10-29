@@ -7,6 +7,7 @@ module Types
     field :post_title, String
     field :post_body, String
     field :comments, [Types::CommentType]
+    field :users, [Types::UserType]
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
   end
