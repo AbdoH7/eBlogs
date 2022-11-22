@@ -10,8 +10,10 @@
     "formik": "^2.2.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-relay": "^14.1.0",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
+    "relay-runtime": "^14.1.0",
     "web-vitals": "^2.1.0",
     "yup": "^0.32.11"
   },
@@ -19,7 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "relay": "yarn run relay-compiler"
   },
   "eslintConfig": {
     "extends": [
@@ -38,5 +41,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "relay": {
+    "src": "./src",
+    "language": "javascript",
+    "schema": "./data/schema.graphql",
+    "exclude": [
+      "**/node_modules/**",
+      "**/__mocks__/**",
+      "**/__generated__/**"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-relay": "^14.1.0",
+    "graphql": "^16.6.0",
+    "relay-compiler": "^14.1.0"
   }
 }

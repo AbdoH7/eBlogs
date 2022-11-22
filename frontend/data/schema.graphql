@@ -1,0 +1,57 @@
+{
+  "data": {
+    "__schema": {
+      "queryType": {
+        "fields": [
+          {
+            "name": "comment",
+            "description": null
+          },
+          {
+            "name": "comments",
+            "description": null
+          },
+          {
+            "name": "post",
+            "description": null
+          },
+          {
+            "name": "posts",
+            "description": null
+          },
+          {
+            "name": "testField",
+            "description": "An example field added by the generator"
+          },
+          {
+            "name": "user",
+            "description": null
+          },
+          {
+            "name": "users",
+            "description": null
+          }
+        ]
+      },
+      "mutationType": {
+                "fields": [
+                    {
+                        "name": "addComment"
+                    },
+                    {
+                        "name": "addPost"
+                    },
+                    {
+                        "name": "addUser"
+                    },
+                    {
+                        "name": "testField"
+                    },
+                    {
+                        "name": "userLogin"
+                    }
+                ]
+            }
+    }
+  }
+}

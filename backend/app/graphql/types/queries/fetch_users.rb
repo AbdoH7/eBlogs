@@ -1,5 +1,5 @@
-module Queries
-    class FetchUsers < Queries::BaseQuery
+module Types::Queries
+    class FetchUsers < Types::Queries::BaseQuery
   
       type [Types::UserType], null: false
   

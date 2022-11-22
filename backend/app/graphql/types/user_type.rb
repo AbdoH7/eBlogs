@@ -12,5 +12,6 @@ module Types
     field :comments, [Types::CommentType]
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
+    field :token, String
   end
 end

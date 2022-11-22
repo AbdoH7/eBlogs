@@ -13,7 +13,7 @@ for a in 1..5 do
         user.firstname = Faker::Name.name
         user.lastname = Faker::Name.name
         user.email = Faker::Internet.email
-        user.password_digest = 'Pasdword1234'
+        user.password = 'Pasdword1234'
     end
     for b in 1..5 do
         Post.create do |post|

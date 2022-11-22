@@ -1,12 +1,12 @@
 module Types::Queries
-    class FetchUser < Types::Queries::BaseQuery
-      type Types::UserType, null: false
+    class FetchPost < Types::Queries::BaseQuery
+      type Types::PostType, null: false
       argument :id, ID, required: true
   
       def resolve(id:)
-        User.find(id)
+        Post.find(id)
       rescue ActiveRecord::RecordNotFound => _e
-        GraphQL::ExecutionError.new('User does not exist.')
+        GraphQL::ExecutionError.new('Post does not exist.')
       rescue ActiveRecord::RecordInvalid => e
         GraphQL::ExecutionError.new("Invalid attributes for #{e.record.class}:"\
           " #{e.record.errors.full_messages.join(', ')}")
